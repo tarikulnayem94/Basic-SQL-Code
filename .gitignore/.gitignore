@@ -1,20 +1,20 @@
 Show all database list:
-Command:
+Command:.........................................................................
 SHOW DATABASES;
 
 
 Create Database:
-Command:
+Command:...........................................................................
 CREATE DATABASE College;
 
 
 Drop Database:
-Command:
+Command:..........................................................................
 DROP DATABASE medical;
 
 
 Create Table:
-Command:
+Command:..........................................................................
 CREATE TABLE Student
 (
 Roll int,
@@ -28,25 +28,25 @@ PRIMARY KEY(Roll)
 
 
 Rename table:
-Command:
+Command:..........................................................................
 RENAME TABLE
 student to student_details;
 
 
 Drop Table:
-Command:
+Command:..........................................................................
 DROP TABLE tudent_details;
 
 
 Insert data into table:
-Command:
+Command:..........................................................................
 INSERT INTO student_details
 (Roll, Name, Gender, Age, CGPA, City)
 VALUES (101, 'Nayem', 'male', 25, 2.50, 'Dhaka')
 
 
 Insert more data into table:
-Command:
+Command:..........................................................................
 INSERT INTO student_details
 (Roll, Name, Gender, Age, CGPA, City)
 VALUES
@@ -56,73 +56,73 @@ VALUES
 
 
 Show particular column:
-Command:
+Command:..........................................................................
 SELECT Name
 FROM student_details;
 
 
 Show more column:
-Command:
+Command:..........................................................................
 SELECT Name, CGPA, City
 FROM student_details;
 
 
 Show Full table:
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details;
 
 
 Show full column without duplicate value:
-Command:
+Command:..........................................................................
 SELECT DISTINCT City
 FROM student_details;
 
 
 First 3 user details:
-Command:
+Command:............................................................................
 SELECT *
 FROM student_details
 LIMIT 3;
 
 
 Without 1st 3 user, Program show 2nd 3 user details:
-Command:
+Command:.........................................................................
 SELECT *
 FROM student_details
 LIMIT 3, 3;
 
 
 English Linguistic Ascending order: (Column Sorting)
-Command:
+Command:...........................................................................
 SELECT Name, CGPA, City
 FROM student_details
 ORDER BY Name;
 
 
 English Linguistic Descending order: (Column Sorting)
-Command:
+Command:............................................................................
 SELECT Name, CGPA, City
 FROM student_details
 ORDER BY Name DESC;
 
 
 Value Descending order: (Column Sorting)
-Command:
+Command:............................................................................
 SELECT Name, CGPA
 FROM student_details
 ORDER BY CGPA DESC;
 
 
 Multiple Column Sorting:
-Command:
+Command:............................................................................
 SELECT Name, CGPA
 FROM student_details
 ORDER BY CGPA, City;
 
 
 Arithmetic Operator:
-Command:
+Command:..........................................................................
 SELECT
 5+7,
 15-11,
@@ -132,42 +132,42 @@ SELECT
 
 
 WHERE Clause: Column Sorting
-Command:
+Command:..........................................................................
 SELECT Name, City
 FROM student_details
 WHERE Gender = 'male';
 
 
 WHERE Clause: Column Sorting [DISTINCT]
-Command:
+Command:..........................................................................
 SELECT Name, City
 FROM student_details
 WHERE Gender = 'male';
 
 
 WHERE Clause and Condition: Column Sorting
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE CGPA > 3.00 && Gender = 'female';
 
 
 WHERE Clause and Condition: Relational Operator (between, and)
-Command:
+Command:..........................................................................
 SELECT Roll, Name, Age
 FROM student_details
 WHERE Roll BETWEEN 103 AND 106 && Gender = 'FEMALE';
 
 
 WHERE Clause and Condition: Logical Operator (or)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE Gender = 'male' OR CGPA >= 3.50;
 
 
 WHERE Clause and Condition: Logical Operator (or, and)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE Gender = 'male'
@@ -175,41 +175,41 @@ AND (CGPA >= 3.50 OR City = 'dhaka');
 
 
 WHERE Clause and Condition: Logical Operator (in)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE City IN ("khulna", 'barisal');
 
 
 WHERE Clause and Condition: Logical Operator (not in)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE City NOT IN ('dhaka', 'khulna');
 
 
 WHERE Clause and Condition: Logical Operator (like)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE Name LIKE 'n%';
 
 
 WHERE Clause and Condition: Logical Operator (like)
-Command:
+Command:..........................................................................
 SELECT *
 FROM student_details
 WHERE Name LIKE '%_e_’;       Condition: AnythingeAnything
 
 
 Condition: Logical Operator (as)
-Command:
+Command:..........................................................................
 SELECT Roll AS ID, Name AS 'First_Name'
 FROM student_details;
 
 
 Create Table: [Constraint, AUTO_INCREMENT]
-Command:
+Command:..........................................................................
 CREATE TABLE teacher
 (
 ID int NOT null AUTO_INCREMENT,
@@ -220,7 +220,7 @@ PRIMARY KEY(ID)
 
 
 Insert into database:
-Command:
+Command:..........................................................................
 INSERT INTO teacher (Name, Salary)
 VALUES
 ('GDM', '75000'),
@@ -229,40 +229,40 @@ VALUES
 
 
 Insert into database: update statement
-Command:
+Command:..........................................................................
 UPDATE teacher
 SET Salary = 90000
 WHERE ID = 1000;
 
 
 Database: delete statement
-Command:
+Command:..........................................................................
 DELETE FROM teacher
 WHERE ID >= 1005;
 
 
 Insert into database: update statement for particular condition
-Command:
+Command:..........................................................................
 UPDATE teacher
 SET Salary = Salary + 10000
 WHERE Salary > = 70000;
  
 
 UPPER and LOWER Function:
-Command:
+Command:..........................................................................
 SELECT
 Upper (' I tarikul nayem '),
 LOWER (' I AM TARIKUL NAYEM ');
 
 
 UPPER and LOWER Function:
-Command:
+Command:..........................................................................
 SELECT UPPER (CITY)
 FROM student_details;
 
 
 Functions: CONCAT
-Command:
+Command:..........................................................................
 SELECT CONCAT (Name, ' is ', Age, ' years old ') AS Student
 FROM student_details;
 Describe Table Status:
@@ -281,68 +281,71 @@ EXP (3)                E^3
  
 
 Count number of Row in this Table:
-Command:
+Command:..........................................................................
 SELECT COUNT (*)
 FROM student_details;
 
 
 Aggregate Functions:
-Command:
+Command:..........................................................................
 SELECT AVG(CGPA)
 FROM student_details;
 
 
+Command:..........................................................................
 SELECT MIN(CGPA)
 FROM student_details;
 
 
+Command:..........................................................................
 SELECT MAX(CGPA)
 FROM student_details;
 
 
+Command:..........................................................................
 SELECT SUM(Salary)
 FROM teacher;
 
 
 Show all database list:
-Command:
+Command:..........................................................................
 SELECT COUNT (*)
 SUM(Salary), MAX(Salary), MIN(Salary), AVG(Salary);
 
 
 Sub Query:
-Command:
+Command:..........................................................................
 SELECT * FROM teacher 
 WHERE Salary > (SELECT AVG(Salary) FROM teacher);
 
 
 Add Column into Table:
-Command:
+Command:..........................................................................
 ALTER TABLE teacher
 ADD Age int,
 ADD dept varchar (15);
 
 
 Change Column name from Table:
-Command:
+Command:..........................................................................
 ALTER TABLE teacher
 CHANGE dept Department varchar (15);
 
 
 Drop Column from Table:
-Command:
+Command:..........................................................................
 ALTER TABLE teacher
 DROP COLUMN Age;
 
 
 Upgrade column into table:
-Command:
+Command:..........................................................................
 UPDATE teacher
 SET Department = 'CSE' WHERE ID = 1000;
 
 
 Show Database GROUP BY clause:
-Command:
+Command:..........................................................................
 SELECT Department,
 SUM(Salary)
 FROM teacher
@@ -350,7 +353,7 @@ GROUP BY Department;
 
 
 Order by & Group by clause:
-Command:
+Command:..........................................................................
 SELECT Depertment, SUM(Salary)
 FROM teacher
 GROUP BY Depertment
@@ -358,12 +361,12 @@ ORDER BY SUM(Salary) DESC;
 
 
 Only Delete data from table:
-Command:
+Command:..........................................................................
 TRUNCATE TABLE teacher;
 
 
 All data insert into a table:
-Command:
+Command:..........................................................................
 INSERT INTO exam_result (Reg_Number, Roll, CGPA, group_name)
 VALUES
 (10171, 100, 3.21, 'Science'),
@@ -377,7 +380,7 @@ VALUES
 
 
 Relational Database Between two table:
-Command:
+Command:..........................................................................
 SELECT student_details.Roll, 
    student_details.Name, exam_result.CGPA, 
         student_details.GENDER, exam_result.Group_Name
@@ -388,7 +391,7 @@ WHERE student_details.Roll = exam_result.Roll;
 
 
 Relational Database Between two table:
-Command:
+Command:..........................................................................
 SELECT std.Roll, 
    std.Name, exam.CGPA, std.GENDER, exam.Group_Name
 FROM student_details AS std, exam_result AS exam
@@ -396,7 +399,7 @@ WHERE std.Roll = exam.Roll;
 
 
 Relational Database Between two table: Join Clause
-Command:
+Command:..........................................................................
 SELECT std.Roll, 
    std.Name, exam.CGPA, std.GENDER, exam.Group_Name
    
@@ -406,7 +409,7 @@ ON std.Roll = exam.Roll;
 
 
 Relational Database Between two table: INNER Join 
-Command:
+Command:..........................................................................
 SELECT std.Roll, 
    std.Name, exam.CGPA, std.GENDER, exam.Group_Name
    
@@ -416,7 +419,7 @@ ON std.Roll = exam.Roll;
 
 
 Relational Database Between two table: Left Join
-Command:
+Command:..........................................................................
 SELECT std.Roll, 
    std.Name, exam.CGPA, std.GENDER, exam.Group_Name
    
@@ -426,7 +429,7 @@ ON std.Roll = exam.Roll;
 
 
 Relational Database Between two table: RIGHT Join
-Command:
+Command:..........................................................................
 SELECT std.Roll, 
    std.Name, exam.CGPA, std.GENDER, exam.Group_Name
    
@@ -436,7 +439,7 @@ ON std.Roll = exam.Roll;
 
 
 Relational Database Between two table: UNION / UNION ALL
-Command:
+Command:..........................................................................
 SELECT Roll, Name, Gender, Age
 FROM dhaka_tour
 UNION
@@ -445,45 +448,48 @@ FROM sylhet_tour
 
 
 Create view from Database Table:
-Command:
+Command:..........................................................................
 CREATE VIEW student_view AS
 SELECT Roll, Gender, Name
 FROM student_details;
 
 
 Show current date, current time:
-Command:
+Command:..........................................................................
 SELECT CURRENT_DATE,
 CURRENT_TIME;
 -----------------------------------------
 SELECT NOW ();
 
+
 Show Time & Date:
-Command:
+Command:..........................................................................
 SELECT ADDDATE ('2020-08-24', INTERVAL 3 DAY) AS NEXT_SATURDAT;
 
 
 Make date:
-Command:
+Command:..........................................................................
 SELECT makedate(1994, 315);
 
 
 Find out day from date:
-Command:
+Command:..........................................................................
 SELECT Dayname('1994-12-08');
 
 
 Top 3 Employer get Highest Salary:
-Command:
+Command:..........................................................................
 SELECT top 3 * from employee 
 order by employee_salary desc;
 
 
+Command:..........................................................................
 SELECT top 3 employee_salary 
 from employee 
 order by employee_salary desc;
 
 
+Command:..........................................................................
 SELECT distinct top 3 employee_salary, 
 employee_name, employee_department 
 from employee 
@@ -491,17 +497,18 @@ order by employee_salary desc;
 
 
 Only common details show:
-Command:
+Command:..........................................................................
 select * from Student_details1
 intersect
 select * from Student_details2;
 
 
 Create a view for particular user:                                                            
-Command:
+Command:..........................................................................
 Create a view for particular user                                                            
 
 
+Command:..........................................................................
 Create view female_employee AS                                                   
 SELECT * FROM employee                                                                    
 where employee_gender = 'female';
