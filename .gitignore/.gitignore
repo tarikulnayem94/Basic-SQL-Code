@@ -121,8 +121,18 @@ FROM student_details
 ORDER BY CGPA, City;
 
 
+Delete null Rows:
+Command:............................................................................
+DELETE FROM student_detail WHERE Roll IS NULL
+
+
+Set new data into null column:
+Command:............................................................................
+UPDATE student_detail SET CITY = 'Dhaka' WHERE Roll = 101
+
+
 Arithmetic Operator:
-Command:..........................................................................
+Command:............................................................................
 SELECT
 5+7,
 15-11,
