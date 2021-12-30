@@ -1,3 +1,12 @@
+MySQL is a database system used on the web · MySQL is a database system that runs on a server · MySQL is ideal for both small and large. Here I have added some commands to MySQL.
+
+
+
+
+
+
+
+
 ## MySQL
 
 #### Q1. When you have a subquery inside of the main query, which query is executed first?
