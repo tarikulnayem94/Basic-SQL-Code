@@ -1,31 +1,3 @@
-
-Show all database list:
-Command:.........................................................................
-SHOW DATABASES;
-
-<br>
-
-Create Database:
-Command:...........................................................................
-CREATE DATABASE College;
-
-<br>
-
-Drop Database:
-Command:..........................................................................
-DROP DATABASE medical;
-
-ahvac
-sisghvbdv
-geogjeoig 
-rhjperhre 
-
-
-
-
-
-
-
 MySQL is a database system used on the web · MySQL is a database system that runs on a server · MySQL is ideal for both small and large. Here I have added some commands to MySQL.
 
 ## MySQL
