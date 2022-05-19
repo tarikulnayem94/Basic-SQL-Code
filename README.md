@@ -1,5 +1,19 @@
 
+Show all database list:
+Command:.........................................................................
+SHOW DATABASES;
 
+<br>
+
+Create Database:
+Command:...........................................................................
+CREATE DATABASE College;
+
+<br>
+
+Drop Database:
+Command:..........................................................................
+DROP DATABASE medical;
 
 
 
