@@ -15,6 +15,12 @@ Drop Database:
 Command:..........................................................................
 DROP DATABASE medical;
 
+ahvac
+sisghvbdv
+geogjeoig 
+rhjperhre 
+
+
 
 
 
