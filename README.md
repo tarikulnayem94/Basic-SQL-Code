@@ -1,4 +1,4 @@
-<h3 align="left">
+<h4 align="left">
 
 Show all database list:
 Command:.........................................................................
@@ -524,20 +524,19 @@ Command:........................................................................
 Create view female_employee AS                                                   
 SELECT * FROM employee                                                                    
 where employee_gender = 'female';
+   
+   
+   
 
 
 </h3>
 
 
 
+
+
+
 MySQL is a database system used on the web · MySQL is a database system that runs on a server · MySQL is ideal for both small and large. Here I have added some commands to MySQL.
-
-
-
-
-
-
-
 
 ## MySQL
 
