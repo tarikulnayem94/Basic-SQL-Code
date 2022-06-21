@@ -422,28 +422,32 @@ FROM student_details;
 Show current date, current time:
 ```SELECT CURRENT_DATE,
 CURRENT_TIME;
------------------------------------------
 SELECT NOW ();
 ```
 
 Show Time & Date:
-```SELECT ADDDATE ('2020-08-24', INTERVAL 3 DAY) AS NEXT_SATURDAT;
+```
+SELECT ADDDATE ('2020-08-24', INTERVAL 3 DAY) AS NEXT_SATURDAT;
 ```
 
 Make date:
-```SELECT makedate(1994, 315);
+```
+SELECT makedate(1994, 315);
 ```
 
 Find out day from date:
-```SELECT Dayname('1994-12-08');
+```
+SELECT Dayname('1994-12-08');
 ```
 
 Top 3 Employer get Highest Salary:
-```SELECT top 3 * from employee 
+```
+SELECT top 3 * from employee 
 order by employee_salary desc;
 ```
 
-```SELECT top 3 employee_salary 
+```
+SELECT top 3 employee_salary 
 from employee 
 order by employee_salary desc;
 ```
