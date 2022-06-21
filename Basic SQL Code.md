@@ -110,28 +110,28 @@ ORDER BY Name DESC;
 ```
 
 Value Descending order: (Column Sorting)
-Command:............................................................................
+```
 SELECT Name, CGPA
 FROM student_details
 ORDER BY CGPA DESC;
-
+```
 
 Multiple Column Sorting:
 Command:............................................................................
 SELECT Name, CGPA
 FROM student_details
 ORDER BY CGPA, City;
-
+```
 
 Delete null Rows:
 Command:............................................................................
 DELETE FROM student_detail WHERE Roll IS NULL
-
+```
 
 Set new data into null column:
 Command:............................................................................
 UPDATE student_detail SET CITY = 'Dhaka' WHERE Roll = 101
-
+```
 
 Arithmetic Operator:
 Command:............................................................................
@@ -141,64 +141,59 @@ SELECT
 5*3,
 21/5,
 29%6;
-
+```
 
 WHERE Clause: Column Sorting
-Command:..........................................................................
-SELECT Name, City
+```SELECT Name, City
 FROM student_details
 WHERE Gender = 'male';
-
+```
 
 WHERE Clause: Column Sorting [DISTINCT]
-Command:..........................................................................
-SELECT Name, City
+```SELECT Name, City
 FROM student_details
 WHERE Gender = 'male';
-
+```
 
 WHERE Clause and Condition: Column Sorting
-Command:..........................................................................
-SELECT *
+```SELECT *
 FROM student_details
 WHERE CGPA > 3.00 && Gender = 'female';
-
+```
 
 WHERE Clause and Condition: Relational Operator (between, and)
-Command:..........................................................................
-SELECT Roll, Name, Age
+```SELECT Roll, Name, Age
 FROM student_details
 WHERE Roll BETWEEN 103 AND 106 && Gender = 'FEMALE';
-
+```
 
 WHERE Clause and Condition: Logical Operator (or)
-Command:..........................................................................
-SELECT *
+```SELECT *
 FROM student_details
 WHERE Gender = 'male' OR CGPA >= 3.50;
-
+```
 
 WHERE Clause and Condition: Logical Operator (or, and)
-Command:..........................................................................
+```
 SELECT *
 FROM student_details
 WHERE Gender = 'male'
 AND (CGPA >= 3.50 OR City = 'dhaka');
-
+```
 
 WHERE Clause and Condition: Logical Operator (in)
-Command:..........................................................................
+```
 SELECT *
 FROM student_details
 WHERE City IN ("khulna", 'barisal');
-
+```
 
 WHERE Clause and Condition: Logical Operator (not in)
-Command:..........................................................................
+```
 SELECT *
 FROM student_details
 WHERE City NOT IN ('dhaka', 'khulna');
-
+```
 
 WHERE Clause and Condition: Logical Operator (like)
 Command:..........................................................................
