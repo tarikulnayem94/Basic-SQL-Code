@@ -1,5 +1,4 @@
-# Show all database list:
-# Command:........................................................................
+Show all database list:
 ```
 SHOW DATABASES;
 ```
