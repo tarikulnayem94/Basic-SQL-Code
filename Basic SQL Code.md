@@ -1,13 +1,12 @@
 
 
 ```
-Show all database list:
-```
-```
-Command:.........................................................................
-SHOW DATABASES;
+#Show all database list:
+#Command:........................................................................
 
+SHOW DATABASES;
 ```
+
 <br>
 
 Create Database:
