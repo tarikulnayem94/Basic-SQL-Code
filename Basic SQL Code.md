@@ -6,18 +6,18 @@ SHOW DATABASES;
 <br>
 
 Create Database:
-Command:...........................................................................
+```
 CREATE DATABASE College;
-
+```
 <br>
 
 Drop Database:
-Command:..........................................................................
+```
 DROP DATABASE medical;
-
+```
 
 Create Table:
-Command:..........................................................................
+```
 CREATE TABLE Student
 (
 Roll int,
@@ -28,87 +28,86 @@ CGPA double(1,2),
 City varchar(15),
 PRIMARY KEY(Roll)
 );
-
+```
 
 Rename table:
-Command:..........................................................................
-RENAME TABLE
+```
 student to student_details;
-
+```
 
 Drop Table:
-Command:..........................................................................
+```
 DROP TABLE tudent_details;
-
+```
 
 Insert data into table:
-Command:..........................................................................
+```
 INSERT INTO student_details
 (Roll, Name, Gender, Age, CGPA, City)
 VALUES (101, 'Nayem', 'male', 25, 2.50, 'Dhaka')
-
+```
 
 Insert more data into table:
-Command:..........................................................................
+```
 INSERT INTO student_details
 (Roll, Name, Gender, Age, CGPA, City)
 VALUES
 (101, 'Nayem', 'male', 25, 2.50, 'Dhaka'),
 (107, 'Umar', 'male', 24, 2.80, 'Dhaka'),
 (108, 'Stefhene', 'female', 26, 3.70, 'Khulna');
-
+```
 
 Show particular column:
-Command:..........................................................................
+```
 SELECT Name
 FROM student_details;
-
+```
 
 Show more column:
-Command:..........................................................................
+```
 SELECT Name, CGPA, City
 FROM student_details;
-
+```
 
 Show Full table:
-Command:..........................................................................
+```
 SELECT *
 FROM student_details;
-
+```
 
 Show full column without duplicate value:
-Command:..........................................................................
+```
 SELECT DISTINCT City
 FROM student_details;
-
+```
 
 First 3 user details:
-Command:............................................................................
+```
 SELECT *
 FROM student_details
 LIMIT 3;
-
+```
 
 Without 1st 3 user, Program show 2nd 3 user details:
-Command:.........................................................................
+```
 SELECT *
 FROM student_details
 LIMIT 3, 3;
-
+```
 
 English Linguistic Ascending order: (Column Sorting)
-Command:...........................................................................
+```
 SELECT Name, CGPA, City
 FROM student_details
 ORDER BY Name;
-
+```
 
 English Linguistic Descending order: (Column Sorting)
-Command:............................................................................
+```
 SELECT Name, CGPA, City
 FROM student_details
 ORDER BY Name DESC;
-
+```
 
 Value Descending order: (Column Sorting)
 Command:............................................................................
