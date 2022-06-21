@@ -256,7 +256,8 @@ FROM student_details;
 ```
 
 Functions: CONCAT
-```SELECT CONCAT (Name, ' is ', Age, ' years old ') AS Student
+```
+SELECT CONCAT (Name, ' is ', Age, ' years old ') AS Student
 FROM student_details;
 Describe Table Status:
 Command:
@@ -270,20 +271,22 @@ Command:
 SELECT POW (8,3),
 LOG (2),
 TRUNCATE (3.1416239, 2);
-EXP (3)                E^3
- ```
+EXP (3) E^3
 
 Count number of Row in this Table:
-```SELECT COUNT (*)
+```
+SELECT COUNT (*)
 FROM student_details;
 ```
 
 Aggregate Functions:
-```SELECT AVG(CGPA)
+```
+SELECT AVG(CGPA)
 FROM student_details;
 ```
 
-```SELECT MIN(CGPA)
+```
+SELECT MIN(CGPA)
 FROM student_details;
 ```
 
