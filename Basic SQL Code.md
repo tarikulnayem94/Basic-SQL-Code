@@ -259,11 +259,13 @@ Functions: CONCAT
 ```
 SELECT CONCAT (Name, ' is ', Age, ' years old ') AS Student
 FROM student_details;
+```
 Describe Table Status:
-Command:
+```
 DESCRIBE student_details;
+```
 Functions: Greatest, Least
-Command:
+```
 SELECT greatest (10, 12, 5, -23, 8, 41, 2),
 least (10, 12, 5, -23, 8, 41, 2);
 Functions: Mathematical
@@ -272,6 +274,7 @@ SELECT POW (8,3),
 LOG (2),
 TRUNCATE (3.1416239, 2);
 EXP (3) E^3
+```
 
 Count number of Row in this Table:
 ```
