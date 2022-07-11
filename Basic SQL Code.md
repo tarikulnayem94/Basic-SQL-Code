@@ -133,7 +133,7 @@ ORDER BY CGPA, City;
 
 Delete null Rows:
 ```
-ELETE FROM student_detail WHERE Roll = '';
+DELETE FROM student_detail WHERE Roll = '';
 ```
 
 Set new data into null column:
