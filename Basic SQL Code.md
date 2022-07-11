@@ -33,8 +33,10 @@ PRIMARY KEY(Roll)
 Exchange Table Data:
 ```
 UPDATE student 
-    SET Age = 32 
-    WHERE Roll = 107
+    SET 
+        Age = 32 
+    WHERE 
+        Roll = 107;
 ```
 
 Rename table:
