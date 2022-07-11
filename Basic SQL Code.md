@@ -41,7 +41,7 @@ UPDATE student
 
 Rename table:
 ```
-student to student_details;
+Alter table student to student_details;
 ```
 
 Drop Table:
