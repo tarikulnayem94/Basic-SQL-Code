@@ -132,11 +132,13 @@ ORDER BY CGPA, City;
 ```
 
 Delete null Rows:
-```DELETE FROM student_detail WHERE Roll IS NULL
+```
+ELETE FROM student_detail WHERE Roll = '';
 ```
 
 Set new data into null column:
-```UPDATE student_detail SET CITY = 'Dhaka' WHERE Roll = 101
+```
+UPDATE student_detail SET CITY = 'Dhaka' WHERE Roll = 101
 ```
 
 Arithmetic Operator:
