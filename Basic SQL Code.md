@@ -256,13 +256,15 @@ WHERE Salary > = 70000;
  ```
 
 UPPER and LOWER Function:
-```SELECT
+```
+SELECT
 Upper (' I tarikul nayem '),
 LOWER (' I AM TARIKUL NAYEM ');
 ```
 
 UPPER and LOWER Function:
-```SELECT UPPER (CITY)
+```
+SELECT UPPER (CITY)
 FROM student_details;
 ```
 
@@ -272,10 +274,12 @@ SELECT CONCAT (Name, ' is ', Age, ' years old ') AS Student
 FROM student_details;
 ```
 Describe Table Status:
+
 ```
 DESCRIBE student_details;
 ```
-Functions: Greatest, Least
+Functions: Greatest, Least:
+
 ```
 SELECT greatest (10, 12, 5, -23, 8, 41, 2),
 least (10, 12, 5, -23, 8, 41, 2);
