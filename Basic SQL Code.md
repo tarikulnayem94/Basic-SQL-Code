@@ -245,15 +245,17 @@ WHERE ID = 1000;
 ```
 
 Database: delete statement
-```DELETE FROM teacher
+```
+DELETE FROM teacher
 WHERE ID >= 1005;
 ```
 
-Insert into database: update statement for particular condition
-```UPDATE teacher
+Insert into database: update statement for particular condition:
+```
+UPDATE teacher
 SET Salary = Salary + 10000
 WHERE Salary > = 70000;
- ```
+```
 
 UPPER and LOWER Function:
 ```
