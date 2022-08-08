@@ -1,4 +1,4 @@
-Show all database list:
+# Show all database list:
 ```
 SHOW DATABASES;
 ```
