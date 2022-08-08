@@ -413,23 +413,26 @@ ON std.Roll = exam.Roll;
 ```
 
 Relational Database Between two table: Left Join
-```SELECT std.Roll, 
-   std.Name, exam.CGPA, std.GENDER, exam.Group_Name
+```
+SELECT std.Roll, 
+std.Name, exam.CGPA, std.GENDER, exam.Group_Name
      
 FROM student_details AS std Left JOIN exam_result AS exam
 ON std.Roll = exam.Roll;
 ```
 
 Relational Database Between two table: RIGHT Join
-```SELECT std.Roll, 
-   std.Name, exam.CGPA, std.GENDER, exam.Group_Name  
+```
+SELECT std.Roll, 
+std.Name, exam.CGPA, std.GENDER, exam.Group_Name  
    
 FROM student_details AS std RIGHT JOIN exam_result AS exam
 ON std.Roll = exam.Roll;
 ```
 
 Relational Database Between two table: UNION / UNION ALL
-```SELECT Roll, Name, Gender, Age
+```
+SELECT Roll, Name, Gender, Age
 FROM dhaka_tour
 UNION
 SELECT Roll, Name, Gender, Age
@@ -437,7 +440,8 @@ FROM sylhet_tour
 ```
 
 Create view from Database Table:
-```CREATE VIEW student_view AS
+```
+CREATE VIEW student_view AS
 SELECT Roll, Gender, Name
 FROM student_details;
 ```
@@ -482,16 +486,20 @@ order by employee_salary desc;
 ```
 
 Only common details show:
-```select * from Student_details1
+```
+select * from Student_details1
 intersect
 select * from Student_details2;
 ```
 
 Create a view for particular user:                                                            
-```Create a view for particular user                                                            
+```
+Create a view for particular user                                                            
 ```
 
-```Create view female_employee AS                                                   
+
+Create view female_employee AS
+```
 SELECT * FROM employee                                                                    
 where employee_gender = 'female';
 ```
